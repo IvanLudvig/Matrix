@@ -8,7 +8,6 @@ int sgn(int i, int j)
 	{
 		return -1;
 	}
-
 	return 1;
 }
 
