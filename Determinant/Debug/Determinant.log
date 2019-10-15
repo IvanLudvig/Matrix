@@ -1,0 +1,19 @@
+﻿  Determinant.cpp
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(203,1): warning C4244: '+=': conversion from 'T' to 'int', possible loss of data
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(203,1): warning C4244:         with
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(203,1): warning C4244:         [
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(203,1): warning C4244:             T=long double
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(203,1): warning C4244:         ]
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(191): message : while compiling class template member function 'matrix<long double> *matrix<long double>::operator *(matrix<long double> *)'
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(303): message : see reference to function template instantiation 'matrix<long double> *matrix<long double>::operator *(matrix<long double> *)' being compiled
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(244): message : see reference to class template instantiation 'matrix<long double>' being compiled
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(212,4): warning C4551: function call missing argument list
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(172,12): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(172,12): warning C4244:         with
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(172,12): warning C4244:         [
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(172,12): warning C4244:             T=long double
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(172,12): warning C4244:         ]
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(164): message : while compiling class template member function 'matrix<long double> *matrix<long double>::operator +(matrix<long double> *)'
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(281): message : see reference to function template instantiation 'matrix<long double> *matrix<long double>::operator +(matrix<long double> *)' being compiled
+C:\Users\vt\source\repos\Determinant\Determinant\Determinant.cpp(180,4): warning C4551: function call missing argument list
+  Determinant.vcxproj -> C:\Users\vt\source\repos\Determinant\Debug\Determinant.exe
