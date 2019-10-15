@@ -12,7 +12,9 @@ int sgn(int i, int j)
 }
 
 template<typename T>
-class matrix {
+class matrix 
+{
+private:
 	T* values;
 	int n, m;
 
@@ -72,7 +74,9 @@ public:
 
 		return res;
 	}
-	T det() {
+	
+	T det() 
+	{
 		T res = 0;
 		int i = 0;
 		if (this->sizeN() > 2)
@@ -97,10 +101,12 @@ public:
 		}
 		return res;
 	}
+	
 	void insert(T v, int i, int j)
 	{
 		values[(i * n) + j] = v;
 	}
+	
 	void scale(T v)
 	{
 		for (int i = 0; i < n; i++)
@@ -111,6 +117,7 @@ public:
 			}
 		}
 	}
+	
 	void print()
 	{
 		for (int i = 0; i < n; i++)
@@ -122,6 +129,7 @@ public:
 			cout << endl;
 		}
 	}
+	
 	bool operator==(matrix<T>* m)
 	{
 		if ((this->sizeN() != m->sizeN()) || (this->sizeM() != m->sizeM()))
@@ -140,6 +148,7 @@ public:
 		}
 		return true;
 	}
+	
 	matrix<T>* operator=(matrix<T>* m)
 	{
 		if (this == m)
@@ -159,6 +168,7 @@ public:
 		}
 		return m;
 	}
+	
 	matrix<T>* operator+(matrix<T> *m)
 	{
 		matrix<T>* res = new matrix<T>(this->sizeN(), this->sizeM());
@@ -180,6 +190,7 @@ public:
 		}
 		return res;
 	}
+	
 	matrix<T>* operator-(matrix<T>* m)
 	{
 		m->scale(-1);
@@ -259,6 +270,7 @@ int main()
 	cout << "1 - determinant" << endl << "2 - matrix addition" << endl
 		<< "3 - matrix substraction" << endl << "4 - matrix multiplication" << endl;
 	cin >> operation;
+	
 	switch (operation)
 	{
 	case 1:
@@ -268,7 +280,7 @@ int main()
 		cout << "Determinant: " << m->det();
 		delete m;
 		break;
-	}
+	}	
 	case 2:
 	{
 		matrix<long double>* m1 = enterMatrix<long double>(1);
